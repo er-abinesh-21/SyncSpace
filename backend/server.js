@@ -30,7 +30,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 const server = http.createServer(app);
 const io = new socketIo(server, {
     cors: {
-        origin: '*',
+        origin: 'https://syncspace-pp9h.onrender.com',
         methods: ['GET', 'POST'],
         credentials: true
     }
